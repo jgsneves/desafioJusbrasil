@@ -2,37 +2,36 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import GlobalStyles from '../../styles/GlobalStyles';
 import {
-    Wrapper,
     Content,
     Product,
     Description,
 } from './styles';
-import Header from '../../components/header';
-import ShopImage from '../../assets/images/shop.jpg';
+import {Products} from '../../components/Products/products';
 
 const Home = () => {
     return (
         <>
             <GlobalStyles />
-            
-            <Wrapper>
-                <Header />
-                <h1>Lista de Produtos</h1>
-                <Content>
-                    <Link 
-                        to='/productdetails' 
-                        style={{ textDecoration: 'none' }}
-                    >
-                        <Product>
-                            <img src={ShopImage} alt="Product" width="250"/>
+            <h1>Lista de Produtos</h1>
+            <Content>
+                <Link 
+                    to='/productdetails' 
+                    style={{ textDecoration: 'none' }}
+                >
+                    {Products.map(product => (
+                        <Product key={product.id}>
+                            <img 
+                                src={product.image} 
+                                alt="Product"
+                                width="300"/>
                             <Description>
-                                <h3>Título do produto</h3>
-                                <p>R$ 200,00</p>
+                                <h3>{product.name}</h3>
+                                <p>R$ {product.price}</p>
                             </Description>
                         </Product>
-                    </Link>
-                </Content>
-            </Wrapper>
+                    ))}
+                </Link>
+            </Content>
         </>
     );
 }

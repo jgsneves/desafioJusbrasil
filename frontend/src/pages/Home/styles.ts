@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div``;
 
 export const Content = styled.div`
     display: flex;
@@ -18,9 +17,12 @@ export const Product = styled.div`
     text-decoration: none;
     color: black;
     
+    
     img {
         border-bottom-left-radius: 20px;
         border-top-left-radius: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     p {
