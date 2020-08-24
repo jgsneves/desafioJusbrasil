@@ -16,7 +16,7 @@ const Home = () => {
             <Content>
                     {Products.map(product => (
                         <Link 
-                            to={`/productdetails/${product.id}`} 
+                            to={`/products/${product.id}`} 
                             style={{ textDecoration: 'none' }}
                         >
                             <Product key={product.id}>

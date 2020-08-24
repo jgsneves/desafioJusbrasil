@@ -8,4 +8,8 @@ export const Content = styled.div`
 export const Description = styled.div`
     display: flex;
     flex-direction: column;
+
+    h2, p {
+        padding: 10px;
+    }
 `;

@@ -11,7 +11,7 @@ const Routes = () => {
             <Wrapper>
                 <Header />
                 <Route component={Home} path='/' exact />
-                <Route component={ProductDetails} path='/productdetails' />
+                <Route component={ProductDetails} path='/products/:id' />
             </Wrapper>
         </BrowserRouter>
     );

@@ -1,6 +1,6 @@
 export const Products = [
     {
-        id: 1,
+        id: "1",
         name: "Smartphone Samsung Galaxy Note 10",
         image: "https://a-static.mlcdn.com.br/618x463/smartphone-samsung-note-10-lite-tela-infinita-6-7-octa-core-2-7-128gb-4gb-12mp-12mp-3mp-preto/semprevoce/4196/97370e45278e557cd09d1484bca9dad9.jpg",
         price: 2389,
@@ -24,7 +24,7 @@ export const Products = [
             protegidos e com total segurança.`
     },
     {
-        id: 2,
+        id: "2",
         name: "Smartphone Apple XR",
         image: "https://www.casasbahia-imagens.com.br/Control/ArquivoExibir.aspx?IdArquivo=1114527881",
         price: 4000,
@@ -35,7 +35,7 @@ export const Products = [
             fazer muito mais com seu iPhone.`
     },
     {
-        id: 3,
+        id: "3",
         name: "Casa de Boneca",
         image: "https://http2.mlstatic.com/casa-casinha-de-boneca-polly-mdf-36-moveis-parquinho-D_NQ_NP_631510-MLB42874232317_072020-F.webp",
         price: 500,
@@ -48,14 +48,14 @@ export const Products = [
         Paredes na cor Rosa bebê`
     },
     {
-        id: 4,
+        id: "4",
         name: "Caneta Bic Azul",
         image: "https://images-na.ssl-images-amazon.com/images/I/71GAns1DbfL._AC_SL1500_.jpg",
         price: 33.60,
         details: `Caneta Esferográfica 1.0mm, BIC, 835205, Azul, 50 Unidades`
     },
     {
-        id: 5,
+        id: "5",
         name: "Máscara de tecido",
         image: "https://t-static.dafiti.com.br/ntA82Kr5PS2Mta2mw66MJLJlUoE=/fit-in/430x623/static.dafiti.com.br/p/summer-soul-kit-com-20-masc%c3%a1ras-dupla-prote%c3%a7%c3%a3o-lav%c3%a1vel-summer-soul%2c-regul%c3%a1vel-azul-marinho-4882-1485895-1-zoom.jpg",
         price: 250,
