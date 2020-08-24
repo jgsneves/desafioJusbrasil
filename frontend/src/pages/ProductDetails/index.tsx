@@ -1,6 +1,6 @@
 import React from 'react';
 import GlobalStyles from '../../styles/GlobalStyles';
-import { Content, Description } from './styles';
+import { Content, Description, Button } from './styles';
 import {RouteComponentProps, useHistory} from 'react-router-dom'
 import { Products } from '../../components/Products/products';
 
@@ -21,6 +21,10 @@ const ProductDetails = (props: IProps) => {
         historyUrl.push('/');
     }
 
+    function HandleBuyButtonClick() {
+        //
+    }
+    
     return (
         <>
             <GlobalStyles />
@@ -31,6 +35,9 @@ const ProductDetails = (props: IProps) => {
                     <h2>{product?.name}</h2>
                     <p>Preço: R$ {product?.price}</p>
                     <p>Descrição: {product?.details}</p>
+                    <Button onClick={HandleBuyButtonClick}>
+                        Comprar
+                    </Button>
                 </Description>
             </Content>
         </>
