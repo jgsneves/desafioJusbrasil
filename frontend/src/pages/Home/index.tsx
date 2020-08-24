@@ -14,23 +14,23 @@ const Home = () => {
             <GlobalStyles />
             <h1>Lista de Produtos</h1>
             <Content>
-                <Link 
-                    to='/productdetails' 
-                    style={{ textDecoration: 'none' }}
-                >
                     {Products.map(product => (
-                        <Product key={product.id}>
-                            <img 
-                                src={product.image} 
-                                alt="Product"
-                                width="300"/>
-                            <Description>
-                                <h3>{product.name}</h3>
-                                <p>R$ {product.price}</p>
-                            </Description>
-                        </Product>
+                        <Link 
+                            to={`/productdetails/${product.id}`} 
+                            style={{ textDecoration: 'none' }}
+                        >
+                            <Product key={product.id}>
+                                <img 
+                                    src={product.image} 
+                                    alt="Product"
+                                    width="300"/>
+                                <Description>
+                                    <h3>{product.name}</h3>
+                                    <p>R$ {product.price}</p>
+                                </Description>
+                            </Product>
+                        </Link>
                     ))}
-                </Link>
             </Content>
         </>
     );
