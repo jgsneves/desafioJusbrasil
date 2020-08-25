@@ -23,6 +23,8 @@ export const ShoppingDiv = styled.div`
         font-style: italic;
         font-weight: bold;
         font-size: 0.7rem;
+        color: black;
+        text-decoration: none;
     }
 `;
 

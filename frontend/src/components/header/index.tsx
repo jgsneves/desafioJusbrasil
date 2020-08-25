@@ -22,13 +22,18 @@ const Header = () => {
                     <img src={Jusbrasil} alt="Jusbrasil" width="80"/>
                 </Link>
                 <Menu>
-                    <ShoppingDiv>
-                        <img src={ShoppingCartLogo} alt="Cart"/>
-                        <p>R$ 500,00</p>
-                        <RedDot>
-                            5
-                        </RedDot>
-                    </ShoppingDiv>
+                    <Link 
+                        to='/shop'
+                        style={{ textDecoration: 'none' }}
+                    >
+                        <ShoppingDiv>
+                            <img src={ShoppingCartLogo} alt="Cart"/>
+                            <p>R$ 500,00</p>
+                            <RedDot>
+                                5
+                            </RedDot>
+                        </ShoppingDiv>
+                    </Link>
                     <UserDiv>
                         <img src={UserLogo} alt="User"/>
                         <p>João</p>
