@@ -18,8 +18,9 @@ const Home = () => {
                         <Link 
                             to={`/products/${product.id}`} 
                             style={{ textDecoration: 'none' }}
+                            key={product.id}
                         >
-                            <Product key={product.id}>
+                            <Product>
                                 <img 
                                     src={product.image} 
                                     alt="Product"

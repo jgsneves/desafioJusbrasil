@@ -6,6 +6,14 @@ import ShoppingCart from './pages/ShoppingChart';
 import { Wrapper } from './styles/wrapper';
 import Header from './components/header';
 
+interface ShoppingItem {
+    id: number;
+    name: string;
+    image: string;
+    price: number;
+    details: string;
+}
+
 const Routes = () => {
     return (
         <BrowserRouter>

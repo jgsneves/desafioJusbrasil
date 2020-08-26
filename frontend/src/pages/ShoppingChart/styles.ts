@@ -5,40 +5,21 @@ export const Content = styled.div`
     max-width: 50vw;
 `;
 
-export const ProductTable = styled.div`
-    border-style: solid;
+export const Table = styled.table`
     border-color: black;
+    border-style: solid;
 `;
 
-export const TableHeader = styled.div`
-    display: flex;
-    justify-content: center;
-    border-style: solid;
+export const TableHeader = styled.th`
     border-color: black;
+    border-style: solid;
     background-color: black;
     color: #FFFFFF;
-
-    h3 {
-        padding: 0 100px;
-    }
+    padding: 0 100px;
 `;
 
-export const ProductsRow = styled.div``;
+export const TableRow = styled.tr``;
 
-export const SingleProductRow = styled.div`
-    display: flex;
-    justify-content: center;
-
-    p {
-        padding: 0 100px;
-    }
-`;
-
-export const TotalRow = styled.div`
-    display: flex;
-    justify-content: center;
-    
-    p {
-        padding: 0 100px;
-    }
+export const TableData = styled.td`
+    padding: 0 20px;
 `;

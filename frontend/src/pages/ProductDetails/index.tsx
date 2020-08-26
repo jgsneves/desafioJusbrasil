@@ -22,7 +22,7 @@ const ProductDetails = (props: IProps) => {
     }
 
     function HandleBuyButtonClick() {
-        //
+      //
     }
     
     return (
