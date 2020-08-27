@@ -8,6 +8,7 @@ export const Content = styled.div`
 export const Table = styled.table`
     border-color: black;
     border-style: solid;
+    margin-bottom: 20px;
 `;
 
 export const TableHeader = styled.th`
@@ -22,4 +23,13 @@ export const TableRow = styled.tr``;
 
 export const TableData = styled.td`
     padding: 0 20px;
+`;
+
+export const Button = styled.button`
+    max-width: 10rem;
+    padding: 5px;
+    border-radius: 3px;
+    border-style: none;
+    background-color: #0275d8;
+    color: #FFFFFF;
 `;

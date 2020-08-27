@@ -5,24 +5,20 @@ import ProductDetails from './pages/ProductDetails';
 import ShoppingCart from './pages/ShoppingChart';
 import { Wrapper } from './styles/wrapper';
 import Header from './components/header';
-
-interface ShoppingItem {
-    id: number;
-    name: string;
-    image: string;
-    price: number;
-    details: string;
-}
+import {Provider} from 'outstated';
+import Store from './store/store';
 
 const Routes = () => {
     return (
         <BrowserRouter>
-            <Wrapper>
-                <Header />
-                <Route component={Home} path='/' exact />
-                <Route component={ProductDetails} path='/products/:id' />
-                <Route component={ShoppingCart} path='/shop' />
-            </Wrapper>
+            <Provider stores={[Store]}>
+                <Wrapper>
+                    <Header />
+                    <Route component={Home} path='/' exact />
+                    <Route component={ProductDetails} path='/products/:id' />
+                    <Route component={ShoppingCart} path='/shop' />
+                </Wrapper>
+            </Provider>
         </BrowserRouter>
     );
 }

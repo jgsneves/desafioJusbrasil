@@ -21,7 +21,8 @@ export const Products = [
             dual chip! Tenha bateria para o dia todo, além de contar com 
             carregamento rápido. Este celular tem proteção personalizada com 
             biometria na tela, deixando seus conteúdos e dados confidenciais 
-            protegidos e com total segurança.`
+            protegidos e com total segurança.`,
+        count: 1
     },
     {
         id: "2",
@@ -32,7 +33,8 @@ export const Products = [
             Ele conta com as melhores tecnologias de hardware e software, 
             que juntos trabalham para que o usuário tenha um smartphone 
             dinâmico e com os mais avançados recursos para que você possa 
-            fazer muito mais com seu iPhone.`
+            fazer muito mais com seu iPhone.`,
+        count: 1,
     },
     {
         id: "3",
@@ -45,20 +47,23 @@ export const Products = [
         Janelas na cor mdf crú(janelas abertas e fixas)
         Telhado na cor mdf crú
         Escadas na cor mdf crú
-        Paredes na cor Rosa bebê`
+        Paredes na cor Rosa bebê`,
+        count: 1,
     },
     {
         id: "4",
         name: "Caneta Bic Azul",
         image: "https://images-na.ssl-images-amazon.com/images/I/71GAns1DbfL._AC_SL1500_.jpg",
         price: 33.60,
-        details: `Caneta Esferográfica 1.0mm, BIC, 835205, Azul, 50 Unidades`
+        details: `Caneta Esferográfica 1.0mm, BIC, 835205, Azul, 50 Unidades`,
+        count: 1,
     },
     {
         id: "5",
         name: "Máscara de tecido",
         image: "https://t-static.dafiti.com.br/ntA82Kr5PS2Mta2mw66MJLJlUoE=/fit-in/430x623/static.dafiti.com.br/p/summer-soul-kit-com-20-masc%c3%a1ras-dupla-prote%c3%a7%c3%a3o-lav%c3%a1vel-summer-soul%2c-regul%c3%a1vel-azul-marinho-4882-1485895-1-zoom.jpg",
         price: 250,
-        details: `Kit com 20 Mascáras Dupla Proteção Lavável`
+        details: `Kit com 20 Mascáras Dupla Proteção Lavável`,
+        count: 1,
     },
 ];

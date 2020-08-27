@@ -11,8 +11,13 @@ import {
 import Jusbrasil from '../../assets/icons/jusbrasil.png';
 import ShoppingCartLogo from '../../assets/icons/shopping-cart.svg';
 import UserLogo from '../../assets/icons/user.svg';
+import { useStore } from 'outstated';
+import Store from '../../store/store';
 
 const Header = () => {
+    const {shoppingCartList, cartValue} = useStore(Store);
+
+
     return (
         <>
             <GlobalStyles />
@@ -28,9 +33,9 @@ const Header = () => {
                     >
                         <ShoppingDiv>
                             <img src={ShoppingCartLogo} alt="Cart"/>
-                            <p>R$ 500,00</p>
+                                <p>R$ {cartValue}</p>
                             <RedDot>
-                                5
+                                {shoppingCartList.length}
                             </RedDot>
                         </ShoppingDiv>
                     </Link>
